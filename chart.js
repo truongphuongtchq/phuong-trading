@@ -2,11 +2,15 @@ let chart;
 let candleSeries;
 
 function initChart() {
-  chart = LightweightCharts.createChart(document.getElementById("chart"), {
-    width: window.innerWidth,
-    height: 300
-  });
+  chart = LightweightCharts.createChart(
+    document.getElementById("chart"),
+    {
+      width: document.getElementById("chart").clientWidth,
+      height: 300
+    }
+  );
 
   candleSeries = chart.addSeries(
-  LightweightCharts.CandlestickSeries
+    LightweightCharts.CandlestickSeries
+  );
 }
