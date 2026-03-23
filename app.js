@@ -10,10 +10,8 @@ async function fetchKline(tf = "1m") {
     close: d.close,
     volume: d.volume
   }));
-  if (!Array.isArray(data)) {
-  console.error("API lỗi:", data);
-  return [];
-}
+
+  if (!Array.isArray(data)) return [];
 }
 
 function avg(arr) {
