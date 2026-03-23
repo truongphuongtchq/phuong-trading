@@ -3,7 +3,7 @@
 // =======================
 async function fetchKline() {
   try {
-    const res = await fetch("/api/tv-history");
+    const res = await fetch("/api/tv-real");
     const data = await res.json();
 
     console.log("DATA:", data);
