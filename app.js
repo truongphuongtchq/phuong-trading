@@ -1,7 +1,5 @@
 async function fetchKline(tf = "1m") {
-  const res = await fetch(
-    `https://restv2.fireant.vn/ohlc?symbol=VN30F1M&period=${tf}&count=100`
-  );
+  const res = await fetch("/api/price");
   const data = await res.json();
 
   return data.map(d => ({
