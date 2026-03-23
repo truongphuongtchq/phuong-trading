@@ -1,5 +1,5 @@
 async function fetchKline(tf = "1m") {
-  const res = await fetch("/api/price");
+  const res = await fetch("/api/tv");
   const data = await res.json();
 
   return data.map(d => ({
