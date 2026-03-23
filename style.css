@@ -1,0 +1,14 @@
+body {
+  font-family: Arial;
+  padding: 10px;
+}
+
+#price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#signal {
+  color: red;
+  font-weight: bold;
+}
