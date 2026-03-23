@@ -7,5 +7,6 @@ function initChart() {
     height: 300
   });
 
-  candleSeries = chart.addCandlestickSeries();
+  candleSeries = chart.addSeries(
+  LightweightCharts.CandlestickSeries
 }
